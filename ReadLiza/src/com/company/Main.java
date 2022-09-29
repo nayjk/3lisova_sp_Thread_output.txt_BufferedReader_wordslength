@@ -20,13 +20,13 @@ public class Main{
         }
         words = text.split(" ").length;
         System.out.println("Количество слов: " + words);
-        System.out.println("Количетсво символов: " + length);
-        System.out.println("Количетсов символов без пробела: "+ text.replaceAll(" ","").length());
+        System.out.println("Количество символов: " + length);
+        System.out.println("Количество символов без пробела: "+ text.replaceAll(" ","").length());
 
         try(BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"))){
             bw.write("Количество слов: "+words+"\n");
-            bw.write("Количетсво символов: "+length+"\n");
-            bw.write("Количетсов символов без пробела: "+text.replaceAll(" ","").length());
+            bw.write("Количество символов: "+length+"\n");
+            bw.write("Количество символов без пробела: "+text.replaceAll(" ","").length());
         }
         catch(IOException ex){
             System.out.println(ex.getMessage());
